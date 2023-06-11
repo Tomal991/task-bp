@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* .container {
+  display: block;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto !important;
+  margin-left: auto !important ;
+} */
 .button {
   @apply bg-[#DC3545] text-[white] px-[10px] py-[6px] font-normal rounded capitalize cursor-pointer;
 }

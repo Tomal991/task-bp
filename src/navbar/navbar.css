@@ -1,10 +1,69 @@
 .nav {
-  @apply flex justify-between items-center px-28 py-10 shadow-md;
+  @apply flex items-center px-3 h-[60px] w-full shadow-md relative text-black;
 }
 
 .image {
-  width: 200px;
+  @apply w-[200px];
 }
-.menu {
-  @apply flex gap-5 items-center font-bold;
+.nav-menu {
+  margin-left: auto;
+}
+.nav-menu > ul {
+  @apply flex gap-5 p-0 items-center font-bold;
+}
+.nav-menu > li {
+  list-style-type: none;
+  margin: 0 1rem;
+}
+.nav-menu > li > a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+}
+
+.hamburger {
+  border: 1px solid gray;
+  height: 40px;
+  width: 40px;
+  padding: 0.5rem;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  transform: translateY(-50%);
+  display: none;
+  /* transition: background-color 0.2s ease-in-out; */
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+  .nav-menu {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+  }
+  .nav-menu > li {
+    text-align: center;
+    margin: 0;
+  }
+  .nav-menu > li > a {
+    color: black;
+    width: 100%;
+    padding: 1.5rem 0;
+  }
+  .nav-menu > ul {
+    /* previous styles */
+    display: none;
+  }
+  .nav-menu.expanded > ul {
+    display: block;
+  }
 }

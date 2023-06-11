@@ -1,0 +1,33 @@
+.wrapper {
+  @apply bg-[#0F0D32] py-8 px-28;
+}
+
+.footer_section {
+  @apply flex flex-1 flex-col justify-start w-full p-3;
+}
+
+.footer_section > p {
+  @apply text-[#8c94b8];
+}
+.footer_section > a {
+  @apply leading-[2] text-[#8c94b8];
+}
+.footer_section > h1 {
+  @apply text-2xl leading-[4] text-white;
+}
+
+.image {
+  @apply w-[200px] pb-2;
+}
+
+.icon_button {
+  @apply border-[1px] border-white px-2 py-0 rounded-lg text-xl text-white;
+}
+.divider{
+    border: 1px solid #8c94b8;
+    margin: 0.5rem 0rem;
+}
+
+.footer_end{
+    @apply flex justify-between flex-wrap text-[#d5d5d5];
+}

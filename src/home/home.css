@@ -1,15 +1,23 @@
+.home_wrapper {
+  @apply py-6 px-12 md:px-20 lg:px-32;
+}
+
 .title {
-  @apply text-[50px] font-bold;
+  @apply text-[50px] font-bold text-[#192733];
 }
 .section {
-  @apply grid grid-cols-6 mt-4;
+  @apply grid grid-cols-6 mt-5;
 }
-.input{
-   @apply w-96 focus:outline-none; 
+.section > p{
+ @apply col-span-6 lg:col-span-4
 }
+
 .input_area {
-  @apply flex justify-between items-center col-span-4 px-3 py-2 shadow-md rounded-lg;
+  @apply flex justify-between items-center col-span-6 lg:col-span-4 h-16 px-2 shadow-3xl rounded-lg;
+}
+.input {
+  @apply w-[60%] focus:outline-none;
 }
 .input_area_button {
-  @apply px-16 py-3;
+  @apply h-[45px] w-[27%] border-none bg-[#dc3545] text-white rounded;
 }
