@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./navbar.css";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -24,9 +24,9 @@ const Navbar = () => {
         <div className={isNavExpanded ? "nav-menu expanded" : "nav-menu"}>
           <ul>
             <li>
-              <Link to="/">
+              <NavLink to="/"  className={({ isActive }) => (isActive ? 'active' : 'inactive')}>
                 <a href="#">Home</a>
-              </Link>
+              </NavLink>
             </li>
             <li>
               <a href="#">Privacy Policy</a>
@@ -35,9 +35,9 @@ const Navbar = () => {
               <a href="#">Terms Condition</a>
             </li>
             <li>
-              <Link to="/about/us">
+              <NavLink to="/about/us"  className={({ isActive }) => (isActive ? 'active' : 'inactive')}>
                 <a href="#">About Us</a>
-              </Link>
+              </NavLink>
             </li>
             <li>
               <a href="#">Contact Us</a>
