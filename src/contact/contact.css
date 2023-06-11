@@ -1,0 +1,15 @@
+.about_wrapper {
+  @apply py-8 px-12 md:px-20 lg:px-32;
+}
+
+.title {
+  @apply text-[50px] font-bold text-[#192733];
+}
+
+.about_section {
+  @apply grid grid-cols-6 mt-5 leading-10;
+}
+
+.about_section > p {
+  @apply col-span-6 lg:col-span-4;
+}

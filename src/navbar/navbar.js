@@ -15,7 +15,6 @@ const Navbar = () => {
           className="hamburger"
           onClick={() => {
             setIsNavExpanded(!isNavExpanded);
-          
           }}
         >
           {" "}
@@ -25,22 +24,26 @@ const Navbar = () => {
         <div className={isNavExpanded ? "nav-menu expanded" : "nav-menu"}>
           <ul>
             <li>
-              <a href="">Home</a>
+              <Link to="/">
+                <a href="#">Home</a>
+              </Link>
             </li>
             <li>
-              <a href="">Privacy Policy</a>
+              <a href="#">Privacy Policy</a>
             </li>
             <li>
-              <a href="">Terms Condition</a>
+              <a href="#">Terms Condition</a>
             </li>
             <li>
-              <a href="">About Us</a>
+              <Link to="/about/us">
+                <a href="#">About Us</a>
+              </Link>
             </li>
             <li>
-              <a href="">Contact Us</a>
+              <a href="#">Contact Us</a>
             </li>
             <li>
-              <a href="">Advertise</a>
+              <a href="#">Advertise</a>
             </li>
             <button className="button">Join Now</button>
           </ul>
